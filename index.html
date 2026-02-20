@@ -27,7 +27,9 @@
   </a>
 
   <button class="burger-btn" type="button" aria-label="Open menu">
-    ☰
+    <svg class="burger-icon" width="24" height="16">
+        <use href="./images/icons.svg#icon-burger"></use>
+    </svg>
   </button>
                     <ul class="nav-list">
                         <li class="nav-item">
@@ -136,7 +138,9 @@
                         <li class="team-item">
                             <article>
                                 <div class="card-wrapper">
-                                    <img src="./images/f1.jpg" alt="Mark Guerrero" width="264" height="260">
+                                    <img src="./images/f1.jpg" 
+                                    srcset="./images/f1.jpg 1x, ./images/f1@2x.jpg 2x"
+                                    alt="Mark Guerrero" width="264" height="260">
                                     <div class="border-team">
                                         <h3 class="name-worker">Mark Guerrero</h3>
                                         <p class="profesion">Product Designer</p>
@@ -179,7 +183,9 @@
                         <li class="team-item">
                             <article>
                                 <div class="card-wrapper">
-                                    <img src="./images/f2.jpg" alt="Tom Ford" width="264" height="260">
+                                    <img src="./images/f2.jpg" 
+                                    srcset="./images/f2.jpg 1x, ./images/f2@2x.jpg 2x"
+                                    alt="Tom Ford" width="264" height="260">
                                     <div class="border-team">
                                         <h3 class="name-worker">Tom Ford</h3>
                                         <p class="profesion">Frontend Developer</p>
@@ -222,7 +228,9 @@
                         <li class="team-item">
                             <article>
                                 <div class="card-wrapper">
-                                    <img src="./images/f3.jpg" alt="Camila Garcia" width="264" height="260">
+                                    <img src="./images/f3.jpg" 
+                                    srcset="./images/f3.jpg 1x, ./images/f3@2x.jpg 2x"
+                                    alt="Camila Garcia" width="264" height="260">
                                     <div class="border-team">
                                         <h3 class="name-worker">Camila Garcia</h3>
                                         <p class="profesion">Marketing</p>
@@ -265,7 +273,9 @@
                         <li class="team-item">
                             <article>
                                 <div class="card-wrapper">
-                                    <img src="./images/f4.jpg" alt="Daniel Wilson" width="264" height="260">
+                                    <img src="./images/f4.jpg"
+                                    srcset="./images/f4.jpg 1x, ./images/f4@2x.jpg 2x"
+                                     alt="Daniel Wilson" width="264" height="260">
                                     <div class="border-team">
                                         <h3 class="name-worker">Daniel Wilson</h3>
                                         <p class="profesion">UI Designer</p>
@@ -604,10 +614,34 @@
                     </ul>
         
                     <ul class="mobile-social">
-                        <li><a href="#">IG</a></li>
-                        <li><a href="#">TW</a></li>
-                        <li><a href="#">FB</a></li>
-                        <li><a href="#">LN</a></li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
         
