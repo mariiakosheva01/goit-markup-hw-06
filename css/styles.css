@@ -1239,6 +1239,12 @@ position: relative;
 
 .contact-list {
     display: none;
+    font-size: 12px;
+}
+@media (min-width:1158px) {
+    .contact-list {
+        font-size: 16px;
+    }
 }
 
 .burger-btn {
