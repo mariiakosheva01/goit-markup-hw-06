@@ -105,17 +105,15 @@ h3 {
     color: #2E2F42;
 }
 
+
 h1 {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07143;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #ffffff;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    max-width: 496px;
+    max-width: 288px;
     margin: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 ul {
@@ -253,16 +251,16 @@ position: relative;
 /* region hero */
 .main-hero {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url("../images/herofon.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     max-width: 320px;
     margin: 0 auto;
-    padding: 112px 0;}
+    padding: 72px 0;
+}
     
     
         /* retina mobile */
@@ -312,6 +310,14 @@ position: relative;
             }
         }
 
+                @media (min-width:768px) {
+                    h1 {
+                        font-size: 56px;
+                        max-width: 496px;
+                    }
+
+                }
+                
 .main-hero .container {
     display: flex;
     align-items: center;
@@ -322,8 +328,8 @@ position: relative;
 .main-hero-title {
     font-family: Roboto;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.071;
+    
+  
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;   
@@ -410,9 +416,9 @@ position: relative;
 .features-icon {
     fill: #4d5ae5;}
       .features-title {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 1.2;
+            font-weight: 700;
+            font-size: 37px;
+            line-height: 1.11;
             margin-bottom: 8px;
             text-align: center;
         }
@@ -486,6 +492,7 @@ position: relative;
 .team-list {
         gap: 24px;
         display: flex;
+        flex-wrap: wrap
     }
 
 .team-item {
@@ -725,8 +732,8 @@ position: relative;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: calc(100% - 30px);
-        max-width: 408px;
+    width: calc(100% - 32px);
+        max-width: 288px;
 
    
     min-height: 584px;
@@ -1070,6 +1077,14 @@ position: relative;
     display: flex;
     gap: 24px;
     align-items: center;
+     flex-direction: column;
+       
+}
+@media (min-width:768px) {
+    .footer-subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
 }
 
 .footer-subscribe-input {
